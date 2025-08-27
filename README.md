@@ -6,7 +6,7 @@ This project predicts whether a patient will be readmitted to the hospital using
 We build a Random Forest classifier, handle data imbalance with SMOTE, optimize performance using GridSearchCV, and finally perform subgroup analysis (male vs. female patients).
 
 ## Steps in the Project
-1. Import Libraries
+### 1. Import Libraries
 
 We use essential Python libraries such as pandas, numpy, scikit-learn, and imbalanced-learn (SMOTE) to process the dataset and train the model.
 
