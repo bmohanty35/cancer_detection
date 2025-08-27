@@ -10,13 +10,13 @@ We build a Random Forest classifier, handle data imbalance with SMOTE, optimize 
 
 We use essential Python libraries such as pandas, numpy, scikit-learn, and imbalanced-learn (SMOTE) to process the dataset and train the model.
 
-2. Load Dataset
+### 2. Load Dataset
 
 The dataset comes from the UCI Machine Learning Repository (Diabetes dataset).
 
 Data is stored in a ZIP file and directly loaded into a Pandas DataFrame.
 
-3. Preprocessing
+### 3. Preprocessing
 
 Missing values (?) are replaced with NaN.
 
@@ -30,25 +30,25 @@ NO → 0 (Not Readmitted)
 
 Categorical variables are one-hot encoded into numeric features.
 
-4. Feature & Target Definition
+### 4. Feature & Target Definition
 
 Features (X): All patient-related predictors.
 
 Target (y): Readmission status (0 or 1).
 
-5. Train-Test Split
+### 5. Train-Test Split
 
 The dataset is split into 70% training and 30% testing.
 
 Stratification ensures class balance between training and testing sets.
 
-6. Handle Class Imbalance with SMOTE
+### 6. Handle Class Imbalance with SMOTE
 
 Since readmission cases are much fewer than non-readmission, the data is imbalanced.
 
 SMOTE (Synthetic Minority Oversampling Technique) generates synthetic samples of the minority class to balance training data.
 
-7. Model Training & Hyperparameter Tuning
+### 7. Model Training & Hyperparameter Tuning
 
 Base model: Random Forest Classifier.
 
@@ -62,7 +62,7 @@ Minimum samples per split and leaf
 
 The best model is chosen using F1-score as the evaluation metric.
 
-8. Model Evaluation
+### 8. Model Evaluation
 
 Predictions are made on the test set.
 
@@ -72,7 +72,7 @@ Confusion Matrix
 
 Precision, Recall, F1-score (Classification Report)
 
-9. Subgroup Analysis (Fairness Check)
+### 9. Subgroup Analysis (Fairness Check)
 
 To ensure fairness across genders, the model’s performance is separately evaluated on:
 
